@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Тануки и сакэ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>狸 Тануки и сакэ</h1>
+    <div class="hud">
+      <span>Бутылки: <b id="bottles">0/3</b></span>
+      <span>Счёт: <b id="score">0</b></span>
+      <span>Рекорд: <b id="best">0</b></span>
+    </div>
+    <div class="wrap">
+      <canvas id="game" width="800" height="450"></canvas>
+      <div id="msg"></div>
+    </div>
+    <div class="controls">
+      <button id="btnStart">Старт</button>
+      <button id="btnPause">Пауза</button>
+      <button id="btnRestart">Заново</button>
+    </div>
+    <p class="hint">← → или A D — бег · Space / W / ↑ — прыжок (один, в воздухе нельзя).<br>
+      Собери 3 бутылки сакэ, избегай огней кицунэ и воды, добеги до тории.</p>
+    <div class="touch">
+      <button data-act="left">◀</button>
+      <button data-act="right">▶</button>
+      <button data-act="jump" class="jump">Прыжок</button>
+    </div>
+  </main>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
